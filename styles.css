@@ -1,0 +1,110 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:55px;
+}
+
+.btn{
+  margin-top:20px;
+  padding:10px 20px;
+  background:#38bdf8;
+  color:black;
+  text-decoration:none;
+  border-radius:8px;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 20px;
+  text-align:center;
+  opacity:0;
+  transform:translateY(50px);
+  transition:0.8s;
+}
+
+.section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ⭐ 3RD ANIMATION */
+.skills{
+  background:#111827;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:30px;
+}
+
+.card{
+  background:#1f2937;
+  padding:25px;
+  border-radius:10px;
+  transform:scale(0);
+  transition:0.5s;
+}
+
+.skills.show .card{
+  transform:scale(1);
+}
+
+.skills.show .card:nth-child(1){transition-delay:0.1s;}
+.skills.show .card:nth-child(2){transition-delay:0.2s;}
+.skills.show .card:nth-child(3){transition-delay:0.3s;}
+.skills.show .card:nth-child(4){transition-delay:0.4s;}
+.skills.show .card:nth-child(5){transition-delay:0.5s;}
+.skills.show .card:nth-child(6){transition-delay:0.6s;}
+
+/* PROJECT */
+.project{
+  background:#1e293b;
+  margin:10px auto;
+  width:60%;
+  padding:15px;
+  border-radius:10px;
+}
+
+/* FORM */
+form{
+  display:flex;
+  flex-direction:column;
+  width:300px;
+  margin:auto;
+  gap:10px;
+}
+
+input,textarea{
+  padding:10px;
+  border:none;
+  border-radius:5px;
+}
+
+button{
+  padding:10px;
+  background:#38bdf8;
+  border:none;
+  cursor:pointer;
+}
